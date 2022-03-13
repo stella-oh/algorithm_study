@@ -25,3 +25,7 @@ my_list = [1,2,3,4,4,5,6,6,7]
 print(binary_search(my_list, 3))
 
 print(binary_search(my_list, -100))
+
+#study ends
+
+print('result:')

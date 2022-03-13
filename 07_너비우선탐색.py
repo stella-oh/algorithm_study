@@ -15,16 +15,16 @@ search_queue = deque()
 search_queue += graph["you"]
 
 
-# def person_is_seller(name):
-#     return name[-1] == "m"
+def person_is_seller(name):
+    return name[-1] == "m"
 
-# while search_queue:
-#     person = search_queue.popleft() #큐의 첫번째사람을 꺼냄
-#     if person_is_seller(person): #끝자리가 m으로 끝나면 망고셀러이다. 
-#         print(person+"is a mango seller!")
-#     else:
-#         search_queue += graph[person]
-#     return False
+while search_queue:
+    person = search_queue.popleft() #큐의 첫번째사람을 꺼냄
+    if person_is_seller(person): #끝자리가 m으로 끝나면 망고셀러이다. 
+        print(person+"is a mango seller!")
+    else:
+        search_queue += graph[person]
+    return False
 
 
 
